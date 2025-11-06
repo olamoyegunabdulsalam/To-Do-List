@@ -1,0 +1,92 @@
+#progressbar{
+    width: 100%;
+    height: 7px;
+    background: #8ac1f7;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 15px;
+}
+#progress{
+    width: 0%;
+    height: 100%;
+    background: #0078f0;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+#numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #0078f0;
+    border: 2px solid #62a7ec;
+    font-weight: bold;
+    border-radius: 50%;
+}
+#task-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #0078f0;
+    border: 2px solid #62a7ec;
+    transition: all 0.3s ease;
+}
+#task-list li:hover{
+    background-color: #e8e9ea ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(
+        -2px);
+}
+#task-list li .checkbox{
+    min-width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+#task-list li .checkbox:checked{
+    transform: scale(1.2);
+}
+#task-list li span{
+    flex: 1;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+#task-list li.completed span{
+    text-decoration: 2px line-through black;
+    color: #b9b1b1;
+}
+.task-buttons{
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+}
+.task-buttons button{
+    background-color: rgba(64, 54, 54, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #0078f0;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-buttons button:hover{
+    transform: scale(1.2);
+}
+.task-buttons .edit-btn{
+    color:dodgerblue;
+}
+.task-buttons .delete-btn{
+    color: red;
+}
